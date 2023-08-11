@@ -13,10 +13,10 @@ def calculate_angle(a, b, c):
     b = np.array(b)
     c = np.array(c)
 
-    ba = a - b
-    bc = c - b
+    b_a = a - b
+    b_c = c - b
 
-    cosine_ang = np.dot(ba, bc) / (np.linalg.norm(ba) * np.linalg.norm(bc))
+    cosine_ang = np.dot(b_a, b_c) / (np.linalg.norm(b_a) * np.linalg.norm(b_c))
     angle = np.degrees(np.arccos(cosine_ang))
 
     return angle
